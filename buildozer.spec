@@ -14,6 +14,9 @@ android.minapi = 21
 android.archs = arm64-v8a,armeabi-v7a
 android.allow_backup = True
 
+# ဒီလိုင်းက Buildozer ကို SDK ရှိတဲ့နေရာ ညွှန်ပြပေးတာပါ
+android.sdk_path = /home/runner/.buildozer/android/platform/android-sdk
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
