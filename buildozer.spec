@@ -13,6 +13,10 @@ android.api = 31
 android.minapi = 21
 android.archs = arm64-v8a,armeabi-v7a
 android.allow_backup = True
+
+# ဒီလိုင်းက အရေးကြီးဆုံးပါ (sdkmanager ရှိတဲ့ လမ်းကြောင်းကို ညွှန်ပေးတာပါ)
+android.sdk_path = /home/runner/.buildozer/android/platform/android-sdk
+
 [buildozer]
 log_level = 2
 warn_on_root = 1
