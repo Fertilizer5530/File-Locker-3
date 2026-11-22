@@ -29,6 +29,11 @@ jobs:
 
       - name: Build with Buildozer
         run: |
+          # License ကို အလိုအလျောက် လက်ခံခိုင်းတဲ့ ကုဒ်လေးပါ
+          yes | $HOME/.buildozer/android/platform/android-sdk/tools/bin/sdkmanager --licenses || true
+          yes | $HOME/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          
+          # Build စတင်ခြင်း
           buildozer -v android debug
 
       - name: Upload APK
